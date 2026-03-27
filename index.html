@@ -15,12 +15,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <main class="landing">
       <div class="glow glow-left"></div>
       <div class="glow glow-right"></div>
-      <form class="signup-panel">
+      <form class="signup-panel" id="signup-form">
         <div class="signup-row">
           <input
             class="signup-input"
@@ -45,6 +46,7 @@
             </svg>
           </button>
         </div>
+        <p class="signup-status" id="signup-status" aria-live="polite"></p>
       </form>
       <section class="hero-card">
         <header class="brand-lockup">
