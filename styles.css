@@ -194,13 +194,46 @@ body {
 }
 
 @media (max-width: 720px) {
+  body {
+    min-height: 100svh;
+    overflow: hidden;
+  }
+
+  .landing {
+    min-height: 100svh;
+    padding: 1rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.8rem;
+  }
+
+  .signup-panel {
+    width: 100%;
+    margin: 0;
+    padding: 0.75rem 0.85rem;
+    border-radius: 16px;
+  }
+
   .hero-card {
+    width: 100%;
     padding: 1.4rem 1rem;
+    margin-top: 0;
     border-radius: 18px;
+  }
+
+  .brand-lockup {
+    margin-bottom: 1rem;
+  }
+
+  .brand-logo {
+    width: 100%;
+    max-width: 620px;
   }
 
   .details-grid {
     grid-template-columns: 1fr;
+    gap: 0.75rem;
   }
 
   .details-right {
@@ -212,7 +245,7 @@ body {
   }
 
   .details-grid {
-    margin-top: 2.25rem;
+    margin-top: 1.5rem;
     text-align: center;
   }
 }
